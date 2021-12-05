@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pizzeria">
         <activity
+            android:name=".Arma_pizza_act"
+            android:exported="true" />
+        <activity
             android:name=".Listado_act"
             android:exported="true" />
         <activity
