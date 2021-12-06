@@ -130,23 +130,26 @@
 
                 <Button
                     android:id="@+id/btnGestion"
-                    android:backgroundTint="#F1C40F"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#F1C40F"
+                    android:onClick="gestion"
                     android:text="GESTION PIZZA" />
 
                 <Button
                     android:id="@+id/btnListado"
-                    android:backgroundTint="#28B463"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#28B463"
+                    android:onClick="listado"
                     android:text="LISTADO PIZZA" />
 
                 <Button
                     android:id="@+id/btnCrear"
-                    android:backgroundTint="#2874A6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#2874A6"
+                    android:onClick="armarPizza"
                     android:text="ARMA TU PIZZA" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

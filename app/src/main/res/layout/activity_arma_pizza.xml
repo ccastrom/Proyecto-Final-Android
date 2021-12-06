@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
+    android:onClick="CalcularPrecio"
     tools:context=".Arma_pizza_act">
 
     <androidx.cardview.widget.CardView
@@ -84,6 +85,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="52dp"
                 android:backgroundTint="#F1C40F"
+                android:onClick="CalcularPrecio"
                 android:text="CALCULAR ENTREGA"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +103,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2" >
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
