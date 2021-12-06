@@ -21,12 +21,13 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 import Model.Pizza;
+import Model.PizzaPredeterminadas;
 
 public class Arma_pizza_act extends AppCompatActivity {
 
     Spinner spnPizza, spnIngrediente;
     TextView resultado;
-    Pizza p = new Pizza();
+    PizzaPredeterminadas p = new PizzaPredeterminadas();
     int resultadoFinal=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -42,16 +42,14 @@ public class Gestion_act extends AppCompatActivity {
             public void onClick(View view) {
                 //AÑADIR PIZZAS
 
-                    Pizza p = new Pizza();
-                    p.setId(UUID.randomUUID().toString());
-                    p.setNombre(name.getText().toString());
-                    p.setPrecio(pre.getText().toString());
-                    p.setLocalizacion(loc.getText().toString());
-                    databaseReference.child("pizzeria").child(p.getId()).setValue(p);
-                    Toast.makeText(getBaseContext(),"Has añadido una pizza",Toast.LENGTH_SHORT).show();
-                    clearForm();
-
-
+                Pizza p = new Pizza();
+                p.setId(UUID.randomUUID().toString());
+                p.setNombre(name.getText().toString());
+                p.setPrecio(pre.getText().toString());
+                p.setLocalizacion(loc.getText().toString());
+                databaseReference.child("pizzeria").child(p.getId()).setValue(p);
+               Toast.makeText(getBaseContext(),"Has añadido una pizza",Toast.LENGTH_SHORT).show();
+               clearForm();
             }
         });
     }
